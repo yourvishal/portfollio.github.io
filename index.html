@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0, 0.1);
+        }
+
+        .me {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transform: translateY(30px) scale(0.5);
+            transform-origin: top;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .me img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            padding-bottom: 30px;
+        }
+
+        .details .content {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .details .content h2 {
+            font-size: 2rem;
+            color: #444;
+            font-weight: 500;
+        }
+
+        .details .content h2 span {
+            color: #03a9f4;
+            font-size: 1rem;
+            font-weight: 400;
+
+        }
+
+        .social {
+
+            position: relative;
+            display: flex;
+        }
+
+        .social li {
+            list-style-type: none;
+            margin: 4px;
+        }
+
+        .social li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            height: 45px;
+            width: 45px;
+            background: transparent;
+            text-decoration: none;
+            border-radius: 50%;
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            color: #444;
+            transition: .5s;
+
+        }
+
+        .social li a:hover {
+            background: #03a9f4;
+            color: #fff;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 10px;
+            margin: 80px;
+            border: 1px solid rgba(0, 0, 0, 0.7);
+            padding: 12px;
+            border-radius: 30px;
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+            color: #444;
+            transition: .5s;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #000;
+
+        }
+
+        .btn:hover {
+             background: #fbff0e;
+            color: #fff;
+        }
+    </style>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <div class="card">
+        <div class="me">
+            <img src="me.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Vishal Yadav<br><span>FRONT END WEB DEVELOPER</span></h2>
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="btn"><a href="#">Hire Me!</a></div>
+</body>
+
+</html>
